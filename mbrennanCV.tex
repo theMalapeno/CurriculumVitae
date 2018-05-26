@@ -1,0 +1,151 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Malachy Brennan} & Email : \href{mailto:brennanmalachy@gmail.com}{brennanmalachy@gmail.com}\\
+  { } & {Mobile : +353 85 8432 390} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dublin City University}{Dublin, Ireland}
+      {Bachelor Electronic \& Computer Engineering, Major in the Internet of Things; First Class Honours}{ Sep. 2014 -- May. 2018}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Arklow Marine Services}{Arklow, Co. Wicklow}
+      {Assistant Fitter}{Jul. 2016 - Sep. 2016}
+      \resumeItemListStart
+        {Assisted with the construction of a ferry intended for Rathlin Island. My role was to aid with the fabrication of sections of the boat, e.g. wheelhouse instrument console, fresh water and waste sanitation system.}
+        {Skills learned/improved include metalworking, plumbing, basic welding, safe work practices, teamwork, problem solving.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Druid Software}{Bray, Co. Wicklow}
+      {Junior System Administrator}{April 2017 - September 2017}
+      \resumeItemListStart
+        \resumeItem{Microservices}
+          {Investigated the adaptability of the Raemis product (standalone mobile network core) as a monolithic application to a microservices architecture. Technologies used include OpenStack, Docker Swarm, and Kubernetes.}
+        \resumeItem{Dev Ops}
+          {A solution was developed to automatically provision all new employee laptops with required/recommended software and configuration such as email and two-factor authentication from bare metal. This involved knowledge of PXELinux, Puppet, and Foreman.}
+        \resumeItem{Server Provisioning}
+          {A new server on site required provisioning with specified requirements including a KVM virtualisation environment for multiple virtual machines, a remote management interface, RAID storage configuration, and security hardening.}
+        \resumeItem{Portable Raemis Demo Kit}
+          {A portable Raemis solution was developed for the sales team which required Raemis to be configured on a laptop and integrated with external mobile radios (2G, 3G, 4G) powered using POE.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Adaptation of Blockchain Technology for Secure Peer-to-Peer IoT Data Exchange}
+      {Final year project investigates the viability of using Blockchain technology for P2P Internet of Things Data Exchange. Involved working with technologies such as Ethereum, JavaScript, and IPFS distributed filesystem.}
+    \resumeSubItem{Development of an IoT enabled Electrocardiogram}
+      {As part of a group project an ECG device was developed to measure heart activity using in-amps, op-amps, and multiple filters. This was then interfaced with a low powered microcontroller for digital signal processing and submission to the ThingSpeak IoT analysis platform.}
+    \resumeSubItem{Library Management System Web Application}
+      {A library management system web app was developed to provide library based functionality such as book search, user creation, and book rentals. The application was written in Java (JSPs and servlets) and used Oracle SQL as a datastore.}
+    \resumeSubItem{Graph based Java Application to Monitor Device Temperature}
+      {A graphical based Java application was created to monitor the temperature of multiple network devices remotely over the network. Temperature from multiple devices are graphically plotted in pseudo real-time and alerts can be set.}
+    \resumeSubItem{VHDL Cryptographic Processor}
+      {Virtual Hardware Description Language was used to develop low level cryptographic abilities such as shifting, non linear lookup tables, and arithmetic logic unit capabilities.}
+    \resumeSubItem{Network Simulations}
+      {Network simulations were carried out using NS3 network simulator to determine throughput and other metrics involved with the 802.11b Wireless protocol under multiple conditions.}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Java, C++, C, Solidity, JavaScript, SQL}
+    }
+    \item{
+      \textbf{Technologies}{: Docker, LXD/LXC, Puppet, Foreman, Geth, IPFS, NodeJS, Git}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
+
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
